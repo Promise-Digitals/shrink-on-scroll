@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Shrink on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="items-left">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="items-right">
+            <a href="#">Sign</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <div class="logo-container">
+        <h1 class="logo">PROMISE</h1>
+    </div>
+    <div class="container"></div>
+    <div class="content">
+        <img src="/images/wallpaper.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, officia. Impedit sequi quaerat illo ut incidunt? Ex adipisci officiis optio unde aut labore libero aliquam dolores, asperiores rem autem. Consequatur maiores omnis ipsam alias nostrum commodi itaque repellendus nobis magnam quod eos enim facere excepturi voluptate at sed aliquam rem optio quidem, officia ad beatae similique! Praesentium saepe est nulla, laudantium officia aliquam mollitia qui sapiente unde, vel sequi accusantium explicabo placeat dolor tempora ab earum rerum necessitatibus nostrum officiis ea, reprehenderit alias fugit sint. Aliquam, rem. Veniam quis laboriosam perspiciatis obcaecati, inventore doloribus repellat voluptatibus qui, unde repudiandae ipsa?</p>
+
+        <div class="header">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aliquam magni eos libero fuga quia facilis perferendis ratione reiciendis corporis deserunt aut mollitia ex, qui iusto nam architecto? Commodi iste reiciendis aut fuga deleniti. Quasi aperiam omnis repudiandae vero minima, dolore laboriosam ex exercitationem a, reiciendis amet quidem perferendis eum aliquam ab ullam sit dolorum laborum, ut odit quia magni similique nobis quo. Laboriosam eaque, magni illo dolor totam, iusto aut vel a adipisci repellat omnis quod accusamus, aperiam facilis. Voluptates odit nostrum vero corrupti suscipit, numquam adipisci ut alias, blanditiis, labore qui minus. Mollitia cum sequi sint doloribus ab nesciunt dolor numquam ea quod ratione tempora sed aliquam voluptatem optio, voluptates obcaecati? Nesciunt architecto ex voluptates maiores nobis eveniet laudantium facere, similique aspernatur fugiat dicta sit officiis quasi quod quos tempore sequi est in! Quo quibusdam minima ducimus rerum officia sunt ad ratione ipsam ab officiis minus nobis at consequuntur modi explicabo similique culpa quaerat eligendi, atque placeat velit ex! Ad ducimus voluptate rerum sunt sit quo eveniet veritatis dolore reiciendis ipsum facere, ex delectus odio vero corporis blanditiis commodi. Blanditiis assumenda, numquam placeat, amet ea mollitia voluptate magnam voluptatem quas ex perferendis doloremque minima quidem iusto labore. Praesentium quos, velit, odit soluta quidem accusamus dolorum reprehenderit eius commodi veritatis sequi aliquid deserunt natus impedit distinctio aliquam corporis mollitia! Rem, veritatis deleniti magnam vero eaque voluptatem fugit ratione numquam! Facere iure ullam hic nihil ea sapiente labore dicta illo rerum culpa magnam laborum natus cum totam repudiandae at deleniti ut rem id, consequatur explicabo facilis. Sequi eaque dicta at repellat neque minus commodi adipisci eveniet facilis? Dolores repellendus repudiandae asperiores rerum? Quisquam ducimus ipsum iste totam, earum reprehenderit voluptates suscipit cum, voluptas voluptatum similique inventore, nulla corrupti facilis eos sequi voluptate quam fugiat alias et accusantium sit maiores quis odit. Modi pariatur, non repudiandae quos voluptas suscipit, cumque velit consectetur atque odit aut nostrum eum explicabo ad a. Ut error in, aperiam, laborum saepe sequi placeat cupiditate dolores ratione expedita id est officia temporibus impedit! Dolorem voluptate sint numquam ex voluptatem molestiae quae temporibus. Ducimus veritatis earum perferendis tenetur placeat, debitis pariatur obcaecati esse. Vel, architecto labore. Atque at veritatis ratione, unde pariatur incidunt reprehenderit distinctio. Blanditiis itaque nihil velit possimus ipsam non sunt officiis. Odio, architecto voluptatem sed error itaque consectetur possimus eos ipsa pariatur praesentium aliquid! Cupiditate fugiat impedit quo ratione! Qui facilis non aperiam distinctio impedit vitae sed maxime laudantium alias unde hic dignissimos corporis doloremque minus neque maiores voluptatem, asperiores delectus recusandae cumque voluptates beatae aliquid deleniti facere. Architecto ab autem tenetur possimus ullam aperiam minus corporis iste odit provident nulla quam, at aliquam incidunt, quibusdam adipisci magni dolorum eaque labore quo quas sapiente temporibus ratione voluptate? Repudiandae commodi at accusantium eveniet officia cum vitae inventore molestias, unde exercitationem architecto quam voluptas illum veniam perferendis qui nisi voluptate explicabo sit voluptates mollitia incidunt assumenda reiciendis aspernatur. Sunt totam tenetur corrupti excepturi, voluptates repellat nostrum soluta quod rem consequatur aperiam fugiat eius? Tempora nihil suscipit dolorem.
+        </div>
+    </div>
+    
+
+    <script>
+        ScrollTrigger.create({
+            animation: gsap.from(".logo", {
+                y: "50vh",
+                scale: 6,
+                yPercent: -50,
+            }),
+            scrub: true,
+            trigger: ".content",
+            start: "top bottom",
+            endTrigger: ".content",
+            end: "top center",
+        });
+    </script>
+</body>
+</html>
