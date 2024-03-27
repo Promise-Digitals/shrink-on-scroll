@@ -17,7 +17,7 @@
 a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: #4f76f6;
     padding: 0 15px;
     font-family: "HK Guise";
     font-weight: 600;
@@ -31,6 +31,7 @@ a{
     font-family: serif;
     padding: 35px;
     z-index: 1000;
+    color: #4f76f6;
 }
 
 .container{
